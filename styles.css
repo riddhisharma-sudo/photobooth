@@ -1,62 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+/* styles.css */
 body {
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-nav {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
 }
 
 .container {
-    background: radial-gradient(circle, rgba(255, 0, 76, 0.2) 30%, transparent 60%);
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+video, canvas {
+    width: 400px;
+    height: 300px;
     border-radius: 10px;
+    border: 3px solid white;
+    margin-bottom: 10px;
 }
 
-.container p {
-    font-size: 20px;
-}
-
-.container span {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.tagline {
-    font-size: 14px;
-    color: gray;
-}
-
-.start-btn {
-    background: white;
-    border: 1px solid black;
-    padding: 10px 20px;
-    font-size: 16px;
+.controls button {
+    margin: 5px;
+    padding: 10px 15px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #ff758c;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: #ff527b;
+}
+
+.filters button, .stickers button {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #555;
+    color: white;
+    cursor: pointer;
+    border: none;
     border-radius: 5px;
 }
 
-footer {
-    position: absolute;
-    bottom: 20px;
-    font-size: 12px;
+.filters button:hover, .stickers button:hover {
+    background: #777;
 }
+
