@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Booth</title>
+    <title>Photobooth</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">privacy policy</a>
+        <select>
+            <option>English</option>
+        </select>
+    </nav>
+
     <div class="container">
-        <video id="video" autoplay></video>
-        <canvas id="canvas"></canvas>
-        <div class="controls">
-            <input type="file" id="upload" accept="image/*">
-            <button id="capture">📷 Capture</button>
-            <button id="applyFilter">🎨 Apply Filter</button>
-            <button id="record">🎥 Record GIF</button>
-            <button id="download">⬇️ Download</button>
-        </div>
-        <div class="filters">
-            <button onclick="setFilter('none')">No Filter</button>
-            <button onclick="setFilter('grayscale(100%)')">Grayscale</button>
-            <button onclick="setFilter('sepia(100%)')">Sepia</button>
-            <button onclick="setFilter('brightness(150%)')">Bright</button>
-        </div>
-        <canvas id="drawCanvas"></canvas>
+        <p>EST <span>photobooth</span> 2025</p>
+        <p class="tagline">Capture the moment, cherish the magic, relive the love</p>
+        <button class="start-btn">START 📸</button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="script.js"></script>
+
+    <footer>
+        <p>made by <a href="#">judie mosinabre</a> ❤️</p>
+        <p>© 2025. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
-
