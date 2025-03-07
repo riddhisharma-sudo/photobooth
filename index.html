@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photobooth</title>
+    <title>Photo Booth</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">privacy policy</a>
-        <select>
-            <option>English</option>
-        </select>
-    </nav>
-
     <div class="container">
-        <p>EST <span>photobooth</span> 2025</p>
-        <p class="tagline">Capture the moment, cherish the magic, relive the love</p>
-        <button class="start-btn">START 📸</button>
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+        <div class="controls">
+            <button id="capture"> Capture</button>
+            <button id="save">Save</button>
+            <button id="gif"> Record GIF</button>
+            <button id="draw"> Draw</button>
+            <button id="ai-filter">Filter</button>
+        </div>
+        <input type="file" id="upload" accept="image/*">
+        <div id="stickers"></div>
     </div>
-
-    <footer>
-        <p>made by <a href="#">judie mosinabre</a> ❤️</p>
-        <p>© 2025. All Rights Reserved.</p>
-    </footer>
+    <script src="script.js"></script>
+    <script src="filters.js"></script>
+    <script src="stickers.js"></script>
+    <script src="ai-filters.js"></script>
+    <script src="draw.js"></script>
+    <script src="utils.js"></script>
 </body>
 </html>
